@@ -42,11 +42,11 @@ public class World extends GraphicsProgram {
 				int randNum = rgen.nextInt(0, 100);
 
 				// approx 50% the spots will be heald by tux
-				if (randNum > 90) { // TODO: 50
+				if (randNum > 50) { // TODO: 50
 					creatures[row][col] = new Tux(this, row, col);
 				}
 				// approx 5% of the spots will be heald by orca
-				else if (randNum < 50) { // TODO: 5
+				else if (randNum < 5) { // TODO: 5
 					creatures[row][col] = new Orca(this, row, col);
 				}
 			}
